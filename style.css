@@ -1,0 +1,95 @@
+:root{
+    --ppl: #9333ea;
+    --red: #EA3833;
+    --green: #8AEA33;
+    --blue: #33E5EA;
+    --grey: #e7e5e4;
+
+}
+
+body{
+    display: grid;
+    grid: auto 2fr/ 1fr 3fr;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#left{
+    background-color: var(--blue);
+    grid-area: 1/1/5/1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    gap: 1rem;
+    justify-content: center;
+    font-size: clamp(15px, 2vw, 4rem);
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    align-items: left;
+    gap: 0.5rem;
+    justify-content: left;
+    margin-left: -1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#header{
+    background-color: ;
+    grid-area: 1/2;
+    display: grid;
+    grid: 1fr 1fr/ 1fr;
+}
+
+#topHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    height: 10vh;
+}
+
+#searchBar{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    background-color: gainsboro;
+    border-radius: 20px;
+    border: none;
+    height: 5vh;
+}
+
+#topUser{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#project{
+    background-color: var(--green);
+    grid-area: 2/2;
+}
+
+#announcement{
+    background-color: var(--red);
+}
+
+#trending{
+    background-color: var(--red);
+}
+
