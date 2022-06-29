@@ -8,7 +8,7 @@
 
 body{
     display: grid;
-    grid: auto 2fr/ 1fr 3fr;
+    grid: auto 2fr/ 25vw 3fr;
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -125,6 +125,10 @@ a{
     margin: 1rem;
 }
 
+#proTitle{
+    margin-top: -1rem;
+}
+
 #pros{
     display: grid;
     grid: 1fr 1fr/ repeat(auto-fit, minmax(200px, 2fr));
@@ -151,7 +155,6 @@ a{
     margin: 2vh;
     font-size:clamp(.5rem, 4vw, 1rem);
     color: slategray;
-
 }
 
 .proIcons{
@@ -165,7 +168,7 @@ a{
     background-color: var(--grey);
 }
 
-#annContainer{
+#annContainer, #trendContainer{
     background-color: azure;
     display: flex;
     flex-flow: column;
@@ -174,17 +177,31 @@ a{
     padding: 1rem;
 }
 
-.ann p{
+[class^='ann'] p{
     font-size: clamp(.5rem, 1.5vw, 1rem);
     color: slategray;
 }
 
-.ann .annHead{
+[class^='ann'] .annHead{
     font-weight: bolder;
     color: #000;
+}
+
+.ann1, .ann2{
+    border-bottom: solid 1px slategray ;
 }
 
 #trending{
     background-color: var(--grey);
 }
 
+[class^='tre']{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+[class^='tre'] p{
+    font-size: clamp(.5rem,2vw, 1rem);
+    color: slategray;
+}
